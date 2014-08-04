@@ -1,17 +1,6 @@
 // gmail code
 var runCode = function() {
-  var gmail = Gmail();
-
-  var email_data = gmail.get.email_data();
-  if(email_data) {
-    window.postMessage({"type" : "edata", "str_data" : JSON.stringify(email_data) }, '*');
-  }
-
-  gmail.observe.on('show_newly_arrived_message', function(id, url, body) {
-    console.log('new email!', id);
-    window.postMessage({ "type": "new_email", "message_id": id }, "*");
-  });
-
+  console.log(Gmail.get.user_email());
 }
 
 
