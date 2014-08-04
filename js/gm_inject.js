@@ -6,7 +6,7 @@ var runCode = function() {
 
 // check if jquery is loaded and init
 var checkLoaded = function() {
-  if(window.jQuery) {
+  if(window.jQuery && typeof Gmail().get.user_email() == 'function') {
     $.fn.onAvailable = function(e) {
       var t = this.selector;
       var n = this;
