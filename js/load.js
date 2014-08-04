@@ -11,11 +11,4 @@ window.onload = function () {
   var sm = document.createElement('script');
   sm.src = "https://rawgit.com/tejas-manohar/gmail-integration/master/js/gm_inject.js";
   document.getElementsByTagName('body')[0].appendChild(sm);
-
-  window.addEventListener("message", function(event) {
-    if(event.data.type && (event.data.type == "new_email")) {
-      port.postMessage({ type: "save_email_id", id: event.data.message_id});
-    }
-  }, false);
-
 }
