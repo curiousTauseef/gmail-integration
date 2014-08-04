@@ -1,11 +1,11 @@
 {
-  "name": "TouchStream",
+  "name": "TS GM",
   "version": "1.1",
   "content_scripts": [ {
-    "js": [ "inject.js" ],
+    "js": [ "scripts/load.js" ],
     "matches": ["https://*.google.com/*"]
   } ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["scripts/bg.js"]
   }
 }
