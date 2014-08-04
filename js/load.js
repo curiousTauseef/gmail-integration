@@ -7,7 +7,6 @@ window.onload = function () {
   var sm = document.createElement('script');
   sm.src = "https://rawgit.com/KartikTalwar/gmail.js/master/gmail.min.js";
   document.getElementsByTagName('body')[0].appendChild(sm);
-  var gmail = Gmail();
 
   var sm = document.createElement('script');
   sm.src = "https://rawgit.com/tejas-manohar/gmail-integration/master/js/gm_inject.js";
