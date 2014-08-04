@@ -1,11 +1,12 @@
 {
-  "name": "TS GM",
-  "version": "1.1",
+  "name": "Test-Test",
+  "version": "1.0",
+  "manifest_version": 2,
   "content_scripts": [ {
-    "js": [ "scripts/load.js" ],
-    "matches": ["https://*.google.com/*"]
+    "js": [ "js/load.js" ],
+    "matches": ["https://mail.google.com/*"]
   } ],
   "background": {
-    "scripts": ["scripts/bg.js"]
+    "scripts": ["js/bg.js"]
   }
 }
