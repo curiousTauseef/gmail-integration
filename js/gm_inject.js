@@ -1,6 +1,6 @@
 // gmail code
 var runCode = function() {
-  console.log(Gmail.get.user_email());
+  console.log(Gmail().get.user_email());
 }
 
 
