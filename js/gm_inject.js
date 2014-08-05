@@ -1,4 +1,3 @@
-// gmail code
 var runCode = function() {
   setInterval(
     function() {
