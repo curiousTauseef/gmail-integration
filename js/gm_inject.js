@@ -1,8 +1,12 @@
 // gmail code
 var runCode = function() {
-  console.log(Gmail().get.user_email());
+  setInterval(
+    function() {
+      addButton();
+    },
+    250
+  );
 }
-
 
 // check if jquery is loaded and init
 var checkLoaded = function() {
@@ -30,3 +34,9 @@ var checkLoaded = function() {
 }
 
 checkLoaded();
+
+function addButton() {
+  if($('h2.hP').length && $(":contains('Add Contact to Stream')").length === 0) {
+    $('<div id="" class="T-I J-J5-Ji ar7 nf T-I-ax7 L3" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" style="-webkit-user-select: none;"><span class="Ykrj7b">Add Contact to Stream</span></div>').insertAfter('div.iH > div > div:nth-last-child(2)');
+  }
+}
